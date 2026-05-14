@@ -1,4 +1,5 @@
 import moviecard from '../components/moviecard';
+import {useState} from 'react';
 
 function Home() {
     const movies=[
@@ -12,9 +13,9 @@ function Home() {
             <form onSubmit={handleSearch} className="search-form">
                 <input 
                 type="text" 
-                placeholder="Search for movies..." 
-                value={searchTerm} 
-                onChange={(e) => setSearchTerm(e.target.value)} />
+                placeholder="Search for movies..."
+                className="search-input"
+                />
                 <button type="submit" className="search-button">Search</button>
             </form>
             <div className="movie-cards">
