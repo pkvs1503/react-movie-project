@@ -1,16 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
+import moviecard from './components/moviecard';
 
 function App() {
-  
-
   return (
     <>
     <Text display="Hello Movie"/>
     <Text display="Welcome to the Movie App"/>
+    <moviecard movie={{title: "Inception", description: "A mind-bending thriller about dreams within dreams.", poster: "https://m.media-amazon.com/images/I/51s+qj8n9lL._AC_.jpg"}}/>
+    <moviecard movie={{title: "The Matrix", description: "A hacker discovers the true nature of reality and his role in the war against its controllers.", poster: "https://m.media-amazon.com/images/I/51EG732BV3L._AC_.jpg"}}/>
     </>
   );
 }
