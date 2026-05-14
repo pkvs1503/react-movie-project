@@ -8,8 +8,19 @@ function App() {
   
 
   return (
-    <div className="App">
-  )
+    <>
+    <Text/>
+    <Text/>
+    </>
+  );
 }
 
-export default App
+function Text(){
+  return(
+    <div>
+      <p>Hello Movie</p>
+    </div>
+  );
+}
+
+export default App;
