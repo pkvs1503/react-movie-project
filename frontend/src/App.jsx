@@ -7,9 +7,7 @@ function App() {
     <>
     <Text display="Hello Movie"/>
     <Text display="Welcome to the Movie App"/>
-    {movieNumber == 1 && 
-    <moviecard movie={{title: "Inception", description: "A mind-bending thriller about dreams within dreams.", poster: "https://m.media-amazon.com/images/I/51s+qj8n9lL._AC_.jpg"}}/>)
-    }   
+    {movieNumber == 1 && <moviecard movie={{title: "Inception", description: "A mind-bending thriller about dreams within dreams.", poster: "https://m.media-amazon.com/images/I/51s+qj8n9lL._AC_.jpg"}}/>}
     </>
   );
 }
