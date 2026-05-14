@@ -9,16 +9,16 @@ function App() {
 
   return (
     <>
-    <Text/>
-    <Text/>
+    <Text display="Hello Movie"/>
+    <Text display="Welcome to the Movie App"/>
     </>
   );
 }
 
-function Text(){
-  return(
+function Text({ display }) {
+  return (
     <div>
-      <p>Hello Movie</p>
+      <p>{display}</p>
     </div>
   );
 }
