@@ -20,7 +20,7 @@ function Home() {
             <form onSubmit={handleSearch} className="search-form">
                 <input 
                 type="text" 
-                placeholder="Search for movies..."
+                placeholder="Search for movies."
                 className="search-input"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
@@ -28,9 +28,9 @@ function Home() {
                 <button type="submit" className="search-button">Search</button>
             </form>
             <div className="movie-cards">
-                {movies.map((movie) => (
-                    <moviecard key={index} movie={movie} />
-                ))}
+                {movies.map((movie) =>
+                 movie.title.toLowerCase().startsWith(searchQuery) &&  <moviecard key={index} movie={movie} />
+                )}
             </div>
         </div>
     );
