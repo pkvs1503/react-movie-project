@@ -8,7 +8,7 @@ function moviecard({movie}) {
             <div className="movie-poster">
                 <img src={movie.poster} alt={movie.title}/>
                 <div className="movie-overlay">
-                  <button className="favourite-btn" onClick={onfavouriteClick}><Favourite>
+                  <button className="favourite-btn" onClick={onfavouriteClick}> 
                     Favourite
                     </button>
                 </div>
