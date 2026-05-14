@@ -28,7 +28,7 @@ function Home() {
                 <button type="submit" className="search-button">Search</button>
             </form>
             <div className="movie-cards">
-                {movies.map((movie, index) => (
+                {movies.map((movie) => (
                     <moviecard key={index} movie={movie} />
                 ))}
             </div>
