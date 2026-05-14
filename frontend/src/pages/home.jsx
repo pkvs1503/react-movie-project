@@ -8,8 +8,15 @@ function Home() {
     ];  
 
     return(
-        <div className="home-page">
-            <h1>Welcome to the Movie App</h1>
+        <div className="home">
+            <form onSubmit={handleSearch} className="search-form">
+                <input 
+                type="text" 
+                placeholder="Search for movies..." 
+                value={searchTerm} 
+                onChange={(e) => setSearchTerm(e.target.value)} />
+                <button type="submit" className="search-button">Search</button>
+            </form>
             <div className="movie-cards">
                 {movies.map((movie, index) => (
                     <moviecard key={index} movie={movie} />
