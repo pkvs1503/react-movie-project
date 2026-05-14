@@ -5,14 +5,14 @@ import '.css/home.css';
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState("");
-    const [popularMovies, setPopularMovies] = useState([]); // this is the state now which has data as array format
+    const [Movies, setMovies] = useState([]); // this is the state now which has data as array format
     const [searchResults, setSearchResults] = useState([]);
 
     useEffect(() => {
         const loadPopularMovies = async () => {
             try{
                 const movies = await getPopularMovies();
-                setPopularMovies(movies);
+                setMovies(movies);
             } catch (error) {
                 console.error("Error fetching popular movies:", error);
             }
